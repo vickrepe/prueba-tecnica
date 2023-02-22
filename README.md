@@ -1,75 +1,54 @@
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
-the [Drupal community][Drupal community].
 
-## Contributing
+<img alt="Castellano" src="https://proyectoviajero.com/wp-content/uploads/2022/02/bandera_espana.webp" height="60px">
 
-Drupal is developed on [Drupal.org][Drupal.org], the home of the international
-Drupal community since 2001!
+# Comenzando
+Este proyecto usa **Lando** como herramienta de desarrollo local. Para empezar a trabajar necesitarás tener Lando instalado en tu computadora.
+### Sigue los siguientes pasos para instalarlo:
 
-[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
-its [issue queue][issue queue], and its [documentation][documentation]. Before
-you start working on code, be sure to search the [issue queue][issue queue] and
-create an issue if your aren't able to find an existing issue.
+* Instala [Docker](https://docs.docker.com/engine/install/ubuntu/)
+* Instala [Lando](https://docs.lando.dev/getting-started/installation.html)
+* Ejecuta el siguiente comando en la raíz de tu proyecto:
+```
+lando start
+```
+* Para poder entrar a la administración Drupal del proyecto, utiliza el siguiente comando (copia la ruta que da el comando y pégala en la ruta del proyecto):
+```
+lando drush uli
+```
+* La ruta para poder visualizar el módulo custom creado para este proyecto, se encuentra en el /home.
+### Requisitos
+* PHP 7.2
+* MySQL 5.7
+## Autores
 
-Every issue on Drupal.org automatically creates a new community-accessible fork
-that you can contribute to. Learn more about the code contribution process on
-the [Issue forks & merge requests page][issue forks].
+* **Víctor Alejandro Núñez** - *Trabajo Completo* - [Perfil Git](https://github.com/vickrepe)
 
-## Usage
+---
+<img alt="Ingles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/800px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" height="60px">
 
-For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
-guides, API references, and more by visiting Drupal's [documentation
-page][documentation].
+# Let's Start
+This project uses **Lando** as a local development tool. To start working you will need to have Lando installed on your computer
+### Follow the steps below to install it:
 
-You can quickly extend Drupal's core feature set by installing any of its
-[thousands of free and open source modules][modules]. With Drupal and its
-module ecosystem, you can often build most or all of what your project needs
-before writing a single line of code.
+* Install [Docker](https://docs.docker.com/engine/install/ubuntu/)
+* Install [Lando](https://docs.lando.dev/getting-started/installation.html)
+* Run the following command in the root of your project:
+```
+lando start
+```
+* In order to access the Drupal administration of the project, use the following command (copy the path given by the command and paste it into the project path):
+```
+lando drush uli
+```
+* The path to view the custom module created for this project is located in /home.
+### Requirements
+* PHP 7.2
+* MySQL 5.7
+## Authors
 
-## Changelog
+* **Víctor Alejandro Núñez** - *Complete Proyect* - [Perfil Git](https://github.com/vickrepe)
 
-Drupal keeps detailed [change records][changelog]. You can search Drupal's
-changes for a record of every notable breaking change and new feature since
-2011.
+---
 
-## Security
-
-For a list of security announcements, see the [Security advisories
-page][Security advisories] (available as [an RSS feed][security RSS]). This
-page also describes how to subscribe to these announcements via email.
-
-For information about the Drupal security process, or to find out how to report
-a potential security issue to the Drupal security team, see the [Security team
-page][security team].
-
-## Need a helping hand?
-
-Visit the [Support page][support] or browse [over a thousand Drupal
-providers][service providers] offering design, strategy, development, and
-hosting services.
-
-## Legal matters
-
-Know your rights when using Drupal by reading Drupal core's
-[license](/core/LICENSE.txt).
-
-Learn about the [Drupal trademark and logo policy here][trademark].
-
-[Drupal.org]: https://www.drupal.org
-[Drupal community]: https://www.drupal.org/community
-[GitLab repository]: https://git.drupalcode.org/project/drupal
-[issue queue]: https://www.drupal.org/project/issues/drupal
-[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
-[documentation]: https://www.drupal.org/documentation
-[changelog]: https://www.drupal.org/list-changes/drupal
-[modules]: https://www.drupal.org/project/project_module
-[security advisories]: https://www.drupal.org/security
-[security RSS]: https://www.drupal.org/security/rss.xml
-[security team]: https://www.drupal.org/drupal-security-team
-[service providers]: https://www.drupal.org/drupal-services
-[support]: https://www.drupal.org/support
-[trademark]: https://www.drupal.com/trademark
