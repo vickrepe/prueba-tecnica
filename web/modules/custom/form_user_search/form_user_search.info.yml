@@ -1,0 +1,5 @@
+name: form_user_search
+type: module
+description: a form that checks if the user exists or not.
+package: Custom
+core_version_requirement: ^9 || ^10

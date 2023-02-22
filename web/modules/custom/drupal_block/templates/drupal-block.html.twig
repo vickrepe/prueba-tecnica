@@ -1,0 +1,21 @@
+//tendrá un span que va a tener un valor que recoge de una variable, una variable llamada data, un
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Lastname</th>
+            <th>E-mail</th>
+            <th>Genero</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in data %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.lastname }}</td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.sexo }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

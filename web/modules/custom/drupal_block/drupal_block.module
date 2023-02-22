@@ -1,0 +1,16 @@
+<?php
+
+
+/**
+ * Implements hook_theme().
+ */
+function drupal_block_theme() {
+  $variables = array(
+    'drupal_block' => array(
+      'variables' => array(
+        'data' => NULL,
+      ),
+    ),
+  );
+  return $variables;
+}

@@ -1,0 +1,12 @@
+<?php
+
+function custom_form_menu() {
+  $items['custom/form'] = array(
+    'title' => 'Custom Form',
+    'description' => 'A custom form for querying user roles',
+    'page callback' => 'custom_form_page',
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}

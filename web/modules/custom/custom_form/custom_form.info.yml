@@ -1,0 +1,8 @@
+name: Custom Form
+description: 'Search user in DB'
+package: custom
+dependencies:
+  - block
+
+type: module
+core_version_requirement: ^8 || ^9

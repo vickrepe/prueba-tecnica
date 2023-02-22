@@ -1,0 +1,40 @@
+<?php
+
+use Drupal\Core\Database\Schema;
+
+
+
+function drupal_block_install(){
+
+    $schema = \Drupal::database()->schema();
+    $table_name = 'custom_table';
+
+    if (!$schema->tableExists($table_name)) {
+        $schema->createTable($table_name, [
+            'fields' => [
+                'id' => [
+                    'type' => 'serial',
+                    'unsigned' => true,
+                    'not null' => true,
+                ],
+                'name' => [
+                    'type' => 'varchar',
+                    'length' => 255,
+                ],
+                'lastname' => [
+                    'type' => 'varchar',
+                    'length' => 255,
+                ],
+                'sexo' => [
+                    'type' => 'varchar',
+                    'length' => 255,
+                ],
+                'email' => [
+                    'type' => 'varchar',
+                    'length' => 255,
+                ],
+            ],
+            'primary key' => ['id'],
+        ]);
+    }
+}

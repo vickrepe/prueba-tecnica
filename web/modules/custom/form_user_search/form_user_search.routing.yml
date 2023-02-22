@@ -1,0 +1,15 @@
+form_user_search.example:
+  path: '/form-user-search/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\form_user_search\Controller\FormUserSearchController::build'
+  requirements:
+    _permission: 'access content'
+
+form_user_search.settings_form:
+  path: '/admin/config/system/form-user-search'
+  defaults:
+    _title: 'form_user_search settings'
+    _form: 'Drupal\form_user_search\Form\SettingsForm'
+  requirements:
+    _permission: 'administer form_user_search configuration'

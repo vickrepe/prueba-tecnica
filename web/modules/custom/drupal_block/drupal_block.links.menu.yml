@@ -1,0 +1,6 @@
+drupal_block.admin:
+  title: Hello Block content
+  description: Show a message for newbies.
+  parent: system.admin_config
+  route_name: drupal_block.form
+  weight: -100

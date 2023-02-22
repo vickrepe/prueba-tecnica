@@ -1,0 +1,6 @@
+form_user_search.settings_form:
+  title: 'form_user_search'
+  description: 'Configure form_user_search.'
+  parent: system.admin_config_system
+  route_name: form_user_search.settings_form
+  weight: 10

@@ -1,0 +1,23 @@
+drupal_block.form:
+  path: '/routing-test'
+  defaults:
+    _form: '\Drupal\drupal_block\Form\Formulario'
+    _title_callback: '\Drupal\drupal_block\Form\Formulario::getTitle'
+  requirements:
+    _permission: 'access content'
+
+drupal_block.content:
+  path: '/user-list'
+  defaults:
+    _controller: '\Drupal\drupal_block\Controller\DrupalBlockController::mymodule'
+    _title: 'User List'
+  requirements:
+    _permission: 'access content'
+
+drupal_block.settings_form:
+  path: '/title-update'
+  defaults:
+    _form: '\Drupal\drupal_block\Form\Title_Form'
+    _title: 'New Title'
+  requirements:
+    _permission: 'administer site configuration'
